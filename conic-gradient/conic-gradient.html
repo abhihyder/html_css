@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conic gradient</title>
+</head>
+<body>
+    <div class="main-wrap">
+        <div class="wrap"> Conic
+            <div class="conic"></div>
+        </div>
+
+        <div class="wrap">Conic2
+            <div class="conic2"></div>
+        </div>
+
+        <div class="wrap">Conic3
+            <div class="conic3"></div>
+        </div>
+
+        <div class="wrap">Conic4
+            <div class="conic4"></div>
+        </div>
+        <div class="wrap">Conic5
+            <div class="conic5"></div>
+        </div>
+        <div class="wrap">Conic6
+            <div class="conic6"></div>
+        </div>
+        <div class="wrap">Conic7
+            <div class="conic7"></div>
+        </div>
+        <div class="wrap">Conic8
+            <div class="conic8"></div>
+        </div>
+    </div>
+    <style>
+    *{margin: 0; padding: 0}
+.main-wrap{
+    width: 90%;
+    margin:0 auto;
+}
+.wrap{
+    width: 25%;
+    height: auto;
+    margin: 20px 0;
+    float: left;
+}
+.conic{
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    border-radius: 50%;
+    background: conic-gradient(#FAE042, #4AAE9B);
+}
+.conic2{
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    border-radius: 50%;
+    background: conic-gradient(cyan, magenta, yellow, black);
+}
+.conic3{
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    border-radius: 50%;
+    background: conic-gradient(red 180deg, #4AAE9B);
+}
+.conic4{
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    border-radius: 50%;
+    background: conic-gradient(red 180deg 90%, #4AAE9B);
+}
+.conic5{
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    border-radius: 50%;
+    background: conic-gradient(cyan 25%, magenta 0 50%, yellow 0 75%, black 0);
+}
+.conic6{
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    border-radius: 50%;
+    background: conic-gradient(from 45deg, cyan, magenta, yellow);
+}
+.conic7{
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    border-radius: 50%;
+    background: conic-gradient(cyan, magenta, yellow, cyan);
+}
+.conic8{
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    border-radius: 50%;
+    background: repeating-conic-gradient(red 10%, #4AAE9B 20%);
+}
+    </style>
+</body>
+</html>

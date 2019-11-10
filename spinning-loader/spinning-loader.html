@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spinning loader</title>
+</head>
+<body>
+    <div class="spinning-loader"></div>
+
+
+<style>
+    body {
+    margin: 0;
+    background:  #15162b;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    
+    }
+
+    .spinning-loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #1da1f233;
+    border-top-color: #0a9df0fc;
+    border-radius: 50%;
+    background: transparent;
+    animation-name: rotate-s-loader;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    position: relative;
+    }
+
+    @keyframes rotate-s-loader {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    }
+
+</style>
+</body>
+</html>
